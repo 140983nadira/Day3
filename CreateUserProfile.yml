@@ -4,6 +4,6 @@
   tasks:
   - name: Create user profile
     win_user_profile:
-      username: ansible
-      state: absent
+      username: ecah
+      state: present
       
