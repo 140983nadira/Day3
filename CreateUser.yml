@@ -1,0 +1,10 @@
+---
+- name: Create user and add user in group
+  hosts: all
+  tasks: 
+  - name: Create user name bob
+    win_user:
+    name: bob
+    state: present
+    groups:
+      - Users
