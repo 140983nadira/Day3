@@ -7,4 +7,4 @@
       name: bob
       state: present
       groups:
-        - Day3
+        - Users
