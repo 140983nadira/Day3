@@ -10,4 +10,4 @@
       - SecurityUpdates
       - Guidance
       - DeveloperKits
-    state: installed
+      state: installed
