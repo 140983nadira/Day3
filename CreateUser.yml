@@ -2,9 +2,14 @@
 - name: Create user and add user in group
   hosts: all
   tasks:
-  - name: Create user name bob
-    win_user:
-      name: lailee
+  - name: Create a new group
+    win_group:
+      name: Deploy
+      description: Deploy Group
       state: present
-      groups:
-        - Users
+  - name: Create user name John
+      win_user:
+        name: John
+        state: present
+        groups:
+        - Deploy
