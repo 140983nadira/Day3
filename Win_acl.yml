@@ -1,0 +1,10 @@
+---
+- name: Change user permisiion to full control
+  hosts: all
+  tasks:
+  - name: give full control
+      win_acl:
+      user: user_Sara
+      path: C:\Temp\test.conf
+      rights: FullControl
+      type: allow
