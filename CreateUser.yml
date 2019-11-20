@@ -4,7 +4,7 @@
   tasks: 
   - name: Create user name bob
     win_user:
-    name: bob
-    state: present
-    groups:
+      name: bob
+      state: present
+      groups:
       - Users
