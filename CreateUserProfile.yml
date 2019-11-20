@@ -1,8 +1,9 @@
 ---
-- name: Create User Profile
+- name: Create user profile
   hosts: all
   tasks:
-  - name: Create user profile before user login
+  - name: Create user profile
     win_user_profile:
       username: ansible
-      state: present
+      state: absent
+      
