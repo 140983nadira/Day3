@@ -8,8 +8,8 @@
       description: Deploy Group
       state: present
   - name: Create user name John
-      win_user:
-        name: John
-        state: present
-        groups:
+    win_user:
+      name: John
+      state: present
+      groups:
         - Deploy
