@@ -4,6 +4,6 @@
   tasks:
   - name: Create user profile
     win_user_profile:
-      username: user_sara
+      username: user_mya
       state: present
       
