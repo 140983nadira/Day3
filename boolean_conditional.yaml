@@ -5,7 +5,7 @@
     run_my_task: true
   tasks:
   - name: Install IIS Web-Server with sub features and management tools
-    win_features:
+    win_feature:
       name: Web-Server
       state: present
       include_sub_features: yes
