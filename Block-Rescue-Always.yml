@@ -1,0 +1,22 @@
+---
+- name: Testing Handlers
+  hosts: all
+  force_handlers: true
+  tasks:
+  - block:
+    - name: Install flash player
+      win_chocolatey:
+        name: flashplayerpp
+        state: present
+    rescue:
+    - name: Install flashplayerppapi
+      win_chocolatey:
+        name: flashplayerppapi
+        state: absent
+    always:
+    - name: I am flower
+      debug:
+        msg: I am flower again, hahaha
+    - name: This is a task
+      debug:
+        msg: Hello World
